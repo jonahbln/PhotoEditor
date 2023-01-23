@@ -1,0 +1,27 @@
+load res/colors.ppm color
+
+filter color colorBlurred blur
+save colorBlurred res/colorBlurred.png
+save colorBlurred res/colorBlurred.jpg
+save colorBlurred res/colorBlurred.bmp
+save colorBlurred res/colorBlurred.ppm
+
+filter color colorSharpened sharpen
+save colorSharpened res/colorSharpened.png
+save colorSharpened res/colorSharpened.jpg
+save colorSharpened res/colorSharpened.bmp
+save colorSharpened res/colorSharpened.ppm
+
+transformation color colorGreyscaled greyscale
+save colorGreyscaled res/colorGreyscale.png
+save colorGreyscaled res/colorGreyscale.jpg
+save colorGreyscaled res/colorGreyScale.bmp
+save colorGreyscaled res/colorGreyScale.ppm
+
+transformation color colorSepia sepia
+save colorSepia res/colorSepia.png
+save colorSepia res/colorSepia.jpg
+save colorSepia res/colorSepia.bmp
+save colorSepia res/colorSepia.ppm
+
+quit

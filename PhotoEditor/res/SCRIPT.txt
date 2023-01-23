@@ -1,0 +1,30 @@
+# script file for all commands
+
+load res/colors.ppm colorpicture
+load res/colors.jpeg colorpictureJPEG
+load res/colors.png colorpicturePNG
+load res/colors.jpg colorpictureJPG
+
+menu
+
+brighten colorpicture colorBrightened 10
+darken colorpicture colorDarken 10
+flip colorpicture colorVertical vertical
+flip colorpicture colorHorizontal horizontal
+greyscale colorpicture colorValue value
+greyscale colorpicture colorIntensity intensity
+greyscale colorpicture colorLuma luma
+greyscale-color colorpicture colorRed red
+greyscale-color colorpicture colorGreen green
+greyscale-color colorpicture colorBlue blue
+filter colorpicture colorBlur blur
+filter colorpicture colorSharpen sharpen
+transformation colorpicture colorgreyscale greyscale
+transformation colorpicture colorsepia sepia
+
+save colorpicture res/colorpicture.png
+save colorpicture res/colorpicture.jpg
+save colorpicture res/colorpicture.bmp
+save colorpicture res/colorpicture.ppm
+
+quit
